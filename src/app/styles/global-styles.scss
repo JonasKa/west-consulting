@@ -1,0 +1,20 @@
+/*
+  These are styles that affect the entire application. They are applied to the root level component with style scoping turned off,
+  meaning they will affect the entire Angular application.
+
+  Variables, functions and mixins are not defined here. Although this CSS affects the entire app, that is only the _compiled CSS_,
+  not the SCSS - meaning that pre-compilation SCSS-helpers such as variables and mixins defined here will not be available for
+  use in other components. Thus, such helpers must be defined in vsm-shared/styles/shared.scss, so that they can be imported
+  and used globally.
+*/
+
+//@import "../shared/styles/shared";                              // variables, functions and mixins
+
+@import "bootstrap-variable-overrides.scss";                        // overrides bootstrap variables
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";      // bootstrap library from npm
+
+@import "bootstrap-extensions.scss";                                // let's try to break this monolith into smaller files
+
+// theming
+@import "typography.scss";
+@import "buttons.scss";
