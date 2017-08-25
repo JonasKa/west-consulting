@@ -11,26 +11,5 @@ import {DOCUMENT} from '@angular/platform-browser';
 export class AppComponent {
   title = 'app';
 
-  prevScrollPosition: number;
-  scrolledUp: boolean = false;
-  scrollPositionTop: boolean = true;
 
-
-  constructor(@Inject(DOCUMENT) private document) {
-
-  }
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    let number = this.document.body.scrollTop;
-    this.scrollPositionTop = number === 0 ? true : false;
-
-    this.scrolledUp = number < this.prevScrollPosition ? true : false;
-
-    console.log('scrollpos:' + number);
-    console.log('prevScrollpos:' + this.prevScrollPosition);
-    console.log('this.scrollPositionTop:' + this.scrollPositionTop);
-    console.log('this.scrolledUp:' + this.scrolledUp);
-    this.prevScrollPosition = number;
-  }
 }
