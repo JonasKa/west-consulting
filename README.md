@@ -27,3 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Google
+Search console: https://www.google.com/webmasters/tools/home?hl=sv
+
+My business: https://business.google.com/b/108544088411092568628/dashboard/l/01144681403217630990?hl=sv&ppsrc=GMBS0&gmbsrc=se-sv-ha-se-z-gmb-s-z-h~bk-46163888903-c&utm_campaign=se-sv-ha-se-z-gmb-s-z-h~bk-46163888903-c&utm_medium=ha&utm_source=gmb

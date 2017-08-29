@@ -26,14 +26,7 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
     let number = this.document.body.scrollTop;
     this.scrollPositionTop = number === 0 ? true : false;
-
     this.scrolledUp = number < this.prevScrollPosition ? true : false;
-
-    console.log('scrollpos:' + number);
-    console.log('prevScrollpos:' + this.prevScrollPosition);
-    console.log('this.scrollPositionTop:' + this.scrollPositionTop);
-    console.log('this.scrolledUp:' + this.scrolledUp);
     this.prevScrollPosition = number;
   }
-
 }
