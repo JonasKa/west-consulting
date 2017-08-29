@@ -1,0 +1,101 @@
+
+/**
+Animated clouds
+ */
+
+
+@keyframes big_cloud {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@keyframes stretched_cloud {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@keyframes small_clouds {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+.sky {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.big_cloud {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 450s linear infinite;
+  -moz-animation: cloud_one 450s linear infinite;
+  -o-animation: cloud_one 450s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  opacity: 0.2;
+}
+
+.stretched_cloud {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: stretched_cloud 350s linear infinite;
+  -moz-animation: stretched_cloud 350s linear infinite;
+  -o-animation: stretched_cloud 350s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  opacity: 0.1;
+}
+
+
+.small_clouds {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: small_clouds 40s linear infinite;
+  -moz-animation: small_clouds 40s linear infinite;
+  -o-animation: small_clouds 40s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  opacity: 0.06;
+}
+@media only screen and (max-width: 768px) {
+  .clouds_three {
+    -webkit-animation: small_clouds 200s linear infinite;
+    -moz-animation: small_clouds 200s linear infinite;
+    -o-animation: small_clouds 200s linear infinite
+  }
+}
+
+

@@ -16,11 +16,11 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'Competences',
+    path: 'competences',
     component: CompetencesComponent
   },
   {
-    path: 'Contact',
+    path: 'contact',
     component: ContactComponent
   },
   {

@@ -1,13 +1,11 @@
 <header class="top" [class.nav-white]="scrolledUp && !scrollPositionTop" [class.nav-up]="!scrolledUp && !scrollPositionTop">
-  <a class="logo" href="/">
-    <img src="/assets/logo_blue.PNG" class="logo-dark" alt="">
-    <img src="/assets/some-light-logo.svg" class="logo-light" alt="">
+  <a class="logo" routerLink="/">
+    <img src="/assets/logos/logo_blue.png" class="logo-dark" alt="">
   </a>
+
   <nav>
-    <ul>
-      <li class=""><a href="/jobs">About</a></li>
-      <li class=""><a href="/about">Competences</a></li>
-      <li class=""><a href="/team">Contact</a></li>
+    <ul><li class=""><a routerLink="/about">About</a></li>
+      <li class=""><a routerLink="/competences">Competences</a></li>
     </ul>
   </nav>
 </header>

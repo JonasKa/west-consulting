@@ -1,7 +1,169 @@
+@import "../styles/variables.scss";
+
 body {
   font-family: 'SourceSansPro-Regular', 'Arial', sans-serif;
-  color: #222;
-  background-color: gray;
-  //font-weight: 900;
+  color: $west-consulting-black-text-color;
+  margin-bottom: 60px;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.sea {
+  background: #000 url("../../assets/banners/sea.jpg") center center;
+}
+
+.sunset {
+  background: #000 url("../../assets/banners/sunset.jpg") center center;
+}
+
+.boathouse {
+  background: #000 url("../../assets/banners/boat_house.jpg") center center;
+}
+
+.map {
+  background: #000 url("../../assets/map_got_bw_black.png") center center;
+}
+
+.code {
+  background: #000 url("../../assets/code.png") center center;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  opacity: 1;
+  border-radius: 0;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 8rem 2rem;
+  }
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Tiempos-Headline-Black', 'Arial', sans-serif;
+}
+
+.btn-west-consulting {
+  color: #fff;
+  background-color: $west-consulting-blue;
+  border-color: #8cbad0;
+}
+
+.btn-west-consulting:hover {
+  color: #fff;
+  background: $west-consulting-blue-darker;
+  }
+
+
+.display-3 {
+  font-size: 2.5rem;
+}
+
+.top-border {
+  border-top: 1px solid $west-consulting-border-color;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid $west-consulting-border-color;
+  color: $west-consulting-black-text-color;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+.jumbotron h1 {
+    font-size: 100px;
+    line-height: 1.5;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 70px;
+    line-height: 1.5;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .jumbotron h1 {
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 40em) {
+   .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+p .introduction {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.quotation {
+  font-family: 'Tiempos-Headline-Black', 'Arial', sans-serif;
+  font-style: italic;
+}
+
+a {
+  color: $west-consulting-black-text-color;
+}
+
+a:hover {
+  text-decoration: none;
+}

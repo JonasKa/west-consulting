@@ -1,5 +1,7 @@
 import {Component, Inject, ViewEncapsulation, HostListener} from '@angular/core';
 import {DOCUMENT} from '@angular/platform-browser';
+import {Subscription} from "rxjs/Subscription";
+import {NavigationEnd, Router} from "@angular/router";
 
 
 @Component({
@@ -9,7 +11,14 @@ import {DOCUMENT} from '@angular/platform-browser';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  title = 'app';
 
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0)
+      }
+    });
+  }
 
 }
