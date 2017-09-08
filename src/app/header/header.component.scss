@@ -1,9 +1,11 @@
+@import "../styles/variables.scss";
+
 .top {
   position: fixed;
   z-index: 50;
   top: 0;
   width: 100%;
-  height: 88px;
+  height: 98px;
   overflow: hidden;
   padding: 30px 0 30px 30px;
   transition: all .4s ease-in-out;
@@ -21,7 +23,7 @@
   top: 0;
   left: 0;
   transition: all .4s ease-in-out;
-  width: 240px;
+  width: 120px;
 }
 
 img {
@@ -42,15 +44,15 @@ img {
 
 .top.nav-white {
   background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #979797;
-  height: 70px;
+  border-bottom: 1px solid $west-consulting-black-text-color;
+  height: 80px;
   padding: 18px 0 18px 30px;
   /*transition: border .4s ease-in-out .4s, height .4s ease-in-out .4s, padding .4s ease-in-out .4s, top .4s ease-in-out, background .4s ease-in-out .4s;
 */
 }
 
 .top.nav-white nav ul li a {
-  color: #222;
+  color: $west-consulting-black-text-color;
   transition-delay: .4s;
 }
 
@@ -86,12 +88,12 @@ ul, ol {
 
 @media only screen and (max-width: 768px) {
   .top nav ul li a {
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 16px;
+    margin: 10px 10px;
     line-height: 25px;
   }
   .top .logo img {
-    width: 140px;
+    width: 100px;
     //top: 5px;
   }
 
@@ -104,7 +106,7 @@ ul, ol {
 }
 
 a {
-  color: #222;
+  color: $west-consulting-black-text-color;
   text-decoration: none;
   cursor: pointer;
 }
