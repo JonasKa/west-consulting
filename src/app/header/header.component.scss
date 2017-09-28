@@ -9,7 +9,7 @@
   overflow: hidden;
   padding: 30px 0 30px 30px;
   transition: all .4s ease-in-out;
-  border-bottom: 1px solid transparent;
+  ///border-bottom: 1px solid transparent;
   transition: border .4s ease-in-out, height .4s ease-in-out, padding .4s ease-in-out, top .4s ease-in-out, background .4s ease-in-out;
 }
 
@@ -39,14 +39,15 @@ img {
 }
 
 .top.nav-up {
-  top: -88px;
+  top: -98px;
 }
 
 .top.nav-white {
   background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid $west-consulting-black-text-color;
-  height: 80px;
+ // border-bottom: 1px solid $west-consulting-black-text-color;
+  height: 100px;
   padding: 18px 0 18px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.19), 0 6px 10px rgba(0,0,0,.23);
   /*transition: border .4s ease-in-out .4s, height .4s ease-in-out .4s, padding .4s ease-in-out .4s, top .4s ease-in-out, background .4s ease-in-out .4s;
 */
 }
@@ -77,7 +78,7 @@ ul, ol {
 }
 
 .top nav ul li a {
-  line-height: 38px;
+  line-height: 48px;
   margin: 0 20px;
   padding: 0 5px;
   display: block;

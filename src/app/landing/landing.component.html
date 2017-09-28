@@ -12,37 +12,36 @@
   </div>
 </div>
 
-<!-- Marketing messaging and featurettes
-   ================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
 
-
-  <!-- START THE FEATURETTES -->
-
-  <div class="row">
-    <div class="col-md-6 sunny-background text-center clickable" (click)="routeTo('competences')">
-      <h2 class="featurette-heading black-text">Find out what role I can take in your business.</h2>
-      <p><a class="btn btn-sm btn-west-consulting" routerLink="/competences" role="button">Explore</a></p>
+<div class="row">
+  <div class="col-md-6 sunny-background text-center clickable" (click)="routeTo('competences')">
+    <h2 class="featurette-heading black-text">Find out what I can do in your business</h2>
+    <div class="call-to-action">
+      <a routerLink="/competences"><span>Read more</span></a>
     </div>
-    <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
-      <div class="text-center clickable" (click)="routeTo('competences')">
-        <h2 class="featurette-heading">Learn more about me and the company</h2>
-        <p><a class="btn btn-sm btn-west-consulting" routerLink="/about" role="button">Explore</a></p>
+  </div>
+  <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
+    <div class="text-center clickable" (click)="routeTo('competences')">
+      <h2 class="featurette-heading">Learn more about me and the company</h2>
+      <div class="call-to-action">
+        <a routerLink="/about"><span>Read more</span></a>
       </div>
     </div>
   </div>
+</div>
 <div class="container">
   <div class="row clickable" (click)="routeTo('about')">
     <div class="col-6 col-lg-6">
       <div class="pt-md-5">
-      <h2 class="quoted-heading text-right font-italic">"A Solution Architect to trust and rely on"
-      </h2>
-      <p class="text-right">- Project Manager</p>
+        <h2 class="quoted-heading text-right font-italic">"A Solution Architect to trust and rely on"
+        </h2>
+        <p class="text-right">- Project Manager</p>
       </div>
     </div>
     <div class="col-6 col-lg-6">
-      <img class="featurette-image img-fluid mx-auto" src="../../assets/500X500/jonas_500x500.jpg"
+      <img class="featurette-image img-fluid mx-auto" src="../../assets/500X500/jonas.png"
            alt="Jonas image">
+
     </div>
   </div>
 </div>

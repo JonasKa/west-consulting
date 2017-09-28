@@ -8,7 +8,7 @@ import {DOCUMENT} from '@angular/platform-browser';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT) private document) {
+  constructor() {
 
   }
 
@@ -24,9 +24,11 @@ export class HeaderComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    let number = this.document.body.scrollTop;
+    let number = window.pageYOffset;
     this.scrollPositionTop = number === 0 ? true : false;
     this.scrolledUp = number < this.prevScrollPosition ? true : false;
     this.prevScrollPosition = number;
+    console.log("Scrolling! ", number);
+
   }
 }
