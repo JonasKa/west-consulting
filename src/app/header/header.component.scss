@@ -44,7 +44,7 @@ img {
 
 .top.nav-white {
   background: rgba(255, 255, 255, 0.9);
- // border-bottom: 1px solid $west-consulting-black-text-color;
+ // border-bottom: 1px solid $west-consulting-westc-text-color-color;
   height: 100px;
   padding: 18px 0 18px 30px;
   box-shadow: 0 10px 30px rgba(0,0,0,.19), 0 6px 10px rgba(0,0,0,.23);
@@ -53,7 +53,7 @@ img {
 }
 
 .top.nav-white nav ul li a {
-  color: $west-consulting-black-text-color;
+  color: $west-consulting-logo-grey;
   transition-delay: .4s;
 }
 
@@ -107,7 +107,7 @@ ul, ol {
 }
 
 a {
-  color: $west-consulting-black-text-color;
+  color: $west-consulting-logo-grey;
   text-decoration: none;
   cursor: pointer;
 }

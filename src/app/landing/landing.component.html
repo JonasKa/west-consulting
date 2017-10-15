@@ -2,8 +2,14 @@
 
 
 <div class="jumbotron sea">
-  <div class="mt-3">
-    <h1 class="text-center fadeIn">Architecture<br/><br/>Development<br/><br/>Agile leadership</h1>
+  <div class="mt-5 fadeIn">
+    <p class="teaser">
+      <strong>Gothenburg based</strong>
+    </p>
+    <h1>Solution Architect<br/>& Developer<br/></h1>
+    <div class="call-to-action">
+      <a href="mailto:jonas@westc.se"><span>Email me</span></a>
+    </div>
   </div>
   <div class="sky">
     <div class="big_cloud" style="background:url(../../assets/animations/big_cloud.png)"></div>
@@ -12,23 +18,25 @@
   </div>
 </div>
 
-
-<div class="row">
-  <div class="col-md-6 sunny-background text-center clickable" (click)="routeTo('competences')">
-    <h2 class="featurette-heading black-text">Find out what I can do in your business</h2>
-    <div class="call-to-action">
-      <a routerLink="/competences"><span>Read more</span></a>
-    </div>
-  </div>
-  <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
-    <div class="text-center clickable" (click)="routeTo('competences')">
-      <h2 class="featurette-heading">Learn more about me and the company</h2>
+<section>
+  <div class="row">
+    <div class="col-md-6 sunny-background text-center clickable" (click)="routeTo('competences')">
+      <h2 class="featurette-heading westc-text-color">Find out what I can do in your business</h2>
       <div class="call-to-action">
-        <a routerLink="/about"><span>Read more</span></a>
+        <a routerLink="/competences"><span>Read more</span></a>
+      </div>
+    </div>
+    <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
+      <div class="text-center clickable" (click)="routeTo('competences')">
+        <h2 class="featurette-heading">Learn more about me and the company</h2>
+        <div class="call-to-action">
+          <a routerLink="/about"><span>Read more</span></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  </section>
+<section class="has-padding">
 <div class="container">
   <div class="row clickable" (click)="routeTo('about')">
     <div class="col-6 col-lg-6">
@@ -41,7 +49,7 @@
     <div class="col-6 col-lg-6">
       <img class="featurette-image img-fluid mx-auto" src="../../assets/500X500/jonas.png"
            alt="Jonas image">
-
     </div>
   </div>
 </div>
+</section>

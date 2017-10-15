@@ -21,6 +21,12 @@ export class AppComponent {
         if (event.urlAfterRedirects !== '/about#contact') {
           window.scrollTo(0, 0);
         }
+
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          const element = document.querySelector("#" + tree.fragment);
+          if (element) { element.scrollIntoView(element); }
+        }
       }
     });
   }
