@@ -1,4 +1,5 @@
 @import "../styles/variables.scss";
+@import "../styles/fade-in.scss";
 
 body {
   font-family: 'SourceSansPro-Regular', 'Arial', sans-serif;
@@ -92,6 +93,7 @@ html {
   opacity: 1;
   border-radius: 0;
   margin-bottom: 0;
+  padding-top: 150px;
 }
 
 .call-to-action {
