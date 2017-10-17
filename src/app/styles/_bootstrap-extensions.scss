@@ -97,6 +97,7 @@ html {
 }
 
 .call-to-action {
+  font-family: 'SourceSansPro-Medium', 'Arial', sans-serif;
   border: 2px solid $west-consulting-blue;
   background-color: $west-consulting-blue;
   border-radius: 60px;
@@ -311,4 +312,5 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: $west-consulting-blue;
 }
