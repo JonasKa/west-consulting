@@ -20,19 +20,23 @@
 
 <section>
   <div class="row">
-    <div class="col-md-6 sunny-background text-center clickable" (click)="routeTo('competences')">
-      <h2 class="featurette-heading westc-text-color">Find out what I can do in your business</h2>
-      <div class="call-to-action">
-        <a routerLink="/competences"><span>Read more</span></a>
-      </div>
+    <div class="col-md-6 alternative-bg text-center clickable" (click)="routeTo('competences')">
+      <section class="has-padding text-center clickable" (click)="routeTo('competences')">
+        <h2 class="featurette-heading">Find out what I can do in your business</h2>
+        <div class="call-to-action">
+          <a routerLink="/competences"><span>Read more</span></a>
+        </div>
+      </section>
     </div>
     <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
-      <div class="text-center clickable" (click)="routeTo('competences')">
-        <h2 class="featurette-heading">Learn more about me and the company</h2>
-        <div class="call-to-action">
-          <a routerLink="/about"><span>Read more</span></a>
+      <section class="has-padding featurette clickable" (click)="routeTo('about')">
+        <div class="text-center clickable" (click)="routeTo('competences')">
+          <h2 class="featurette-heading">Learn more about me and the company</h2>
+          <div class="call-to-action">
+            <a routerLink="/about"><span>Read more</span></a>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </section>
