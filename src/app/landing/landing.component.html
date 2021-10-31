@@ -1,7 +1,4 @@
-<!-- Begin page content -->
-
-
-<div class="jumbotron sea">
+<div [ngClass]="timeOfYear + ' jumbotron'">
   <div class="mt-5 fadeIn">
     <p class="teaser">
       <strong>Gothenburg based</strong>
@@ -20,17 +17,17 @@
 
 <section>
   <div class="row">
-    <div class="col-md-6 alternative-bg text-center clickable" (click)="routeTo('competences')">
-      <section class="has-padding text-center clickable" (click)="routeTo('competences')">
+    <div class="col-md-6 alternative-bg text-center clickable" routerLink="/competences">
+      <section class="has-padding text-center clickable" routerLink="/competences">
         <h2 class="featurette-heading">Find out what I can do in your business</h2>
         <div class="call-to-action">
           <a routerLink="/competences"><span>Read more</span></a>
         </div>
       </section>
     </div>
-    <div class="col-md-6 westc-black-background text-white featurette clickable" (click)="routeTo('about')">
-      <section class="has-padding featurette clickable" (click)="routeTo('about')">
-        <div class="text-center clickable" (click)="routeTo('competences')">
+    <div class="col-md-6 westc-black-background text-white featurette clickable" routerLink="/about">
+      <section class="has-padding featurette clickable"routerLink="/about">
+        <div class="text-center clickable" routerLink="/about">
           <h2 class="featurette-heading">Learn more about me and the company</h2>
           <div class="call-to-action">
             <a routerLink="/about"><span>Read more</span></a>
@@ -42,7 +39,7 @@
 </section>
 <section class="has-padding">
   <div class="container">
-    <div class="row clickable" (click)="routeTo('about')">
+    <div class="row clickable" routerLink="/about">
       <div class="col-6 col-lg-6">
         <div class="pt-md-5 text-right">
         <span class="quoted-heading font-italic">"A Solution Architect to trust and rely on"

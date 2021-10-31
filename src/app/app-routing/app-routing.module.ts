@@ -4,7 +4,6 @@ import {CommonModule} from "@angular/common";
 import {LandingComponent} from "../landing/landing.component";
 import {AboutComponent} from "../about/about.component";
 import {CompetencesComponent} from "../competences/competences.component";
-import {ContactComponent} from "../contact/contact.component";
 
 const routes: Routes = [
   {
@@ -20,10 +19,6 @@ const routes: Routes = [
     component: CompetencesComponent
   },
   {
-    path: 'contact',
-    component: ContactComponent
-  },
-  {
     path: '**',
     component: LandingComponent
   }
@@ -31,8 +26,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
+  exports: [RouterModule]
 })
 export class AppRoutingModule {
 }

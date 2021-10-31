@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss', './landing_animations.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent {
 
-  constructor(private router: Router) { }
+  timeOfYear = new Array(9, 10).indexOf(new Date().getMonth()) > -1 ? "leaves" : "sea";
 
-  ngOnInit() {
-  }
-
-  routeTo(link: string) {
-    console.log('should route to: ', link);
-    this.router.navigate([link]);
+  constructor() {
   }
 
 }

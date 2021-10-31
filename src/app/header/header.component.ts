@@ -1,5 +1,5 @@
 import {Component, Inject, ViewEncapsulation, HostListener, OnInit} from '@angular/core';
-import {DOCUMENT} from '@angular/platform-browser';
+//import {DOCUMENT} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,10 @@ import {DOCUMENT} from '@angular/platform-browser';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
+  prevScrollPosition: number = 0;
+  scrolledUp: boolean = false;
+  scrollPositionTop: boolean = true;
 
   constructor() {
 
@@ -16,11 +20,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  prevScrollPosition: number;
-  scrolledUp: boolean = false;
-  scrollPositionTop: boolean = true;
-
-
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -28,7 +27,5 @@ export class HeaderComponent implements OnInit {
     this.scrollPositionTop = number === 0 ? true : false;
     this.scrolledUp = number < this.prevScrollPosition ? true : false;
     this.prevScrollPosition = number;
-    console.log("Scrolling! ", number);
-
   }
 }

@@ -9,7 +9,6 @@ import { NoContentComponent } from './no-content/no-content.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { CompetencesComponent } from './competences/competences.component';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { ContactComponent } from './contact/contact.component';
     NoContentComponent,
     LandingComponent,
     AboutComponent,
-    CompetencesComponent,
-    ContactComponent
+    CompetencesComponent
   ],
   imports: [
     BrowserModule,

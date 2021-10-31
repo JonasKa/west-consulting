@@ -1,6 +1,6 @@
 # west-consulting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
 ## Development server
 
@@ -26,6 +26,12 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Deploy instructions
+1. ng build (if problem with node-sass. Re install it as proposed)
+2. Connect with FTP (FileZilla on my Mac) and the westc.se user
+3. Update all the files, but ensure keep the .htaccess to ensure refresh of sub page
 
 ## Google
 Search console: https://www.google.com/webmasters/tools/home?hl=sv
